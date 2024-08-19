@@ -1,8 +1,8 @@
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
+import * as SplashScreen from 'expo-splash-screen';
+import { useFonts } from 'expo-font';
+import { Stack } from 'expo-router';
 
 import { useColorScheme } from 'react-native';
 
@@ -21,11 +21,11 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    'mon-b': require('../assets/fonts/Montserrat-Bold.ttf'),
-    'mon-sb': require('../assets/fonts/Montserrat-SemiBold.ttf'),
-    'mon-l': require('../assets/fonts/Montserrat-Light.ttf'),
-    'mon-r': require('../assets/fonts/Montserrat-Regular.ttf'),
-    'mon-m': require('../assets/fonts/Montserrat-Medium.ttf'),
+    'mon-b': require('@/assets/fonts/Montserrat-Bold.ttf'),
+    'mon-sb': require('@/assets/fonts/Montserrat-SemiBold.ttf'),
+    'mon-l': require('@/assets/fonts/Montserrat-Light.ttf'),
+    'mon-r': require('@/assets/fonts/Montserrat-Regular.ttf'),
+    'mon-m': require('@/assets/fonts/Montserrat-Medium.ttf'),
   });
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
