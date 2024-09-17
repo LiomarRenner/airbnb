@@ -5,6 +5,7 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 
 import { useColorScheme } from 'react-native';
+import React from 'react';
 
 export {
   // Catch any errors thrown by the Layout component.
